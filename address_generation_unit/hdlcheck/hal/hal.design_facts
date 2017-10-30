@@ -1,0 +1,34 @@
+halstruct: 06.11-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+
+
+Design Facts
+============
+
+
+  1. Primary inputs used as flip-flop
+     clocks and latch enables         :
+                                            Number Of single-bit
+     Primary Input                    : Flipflops/latches controlled
+     -------------                      ----------------------------
+
+  2. Gated primary input used as flip-flop
+     clocks and latch enables         :
+                                            Number Of single-bit
+     Gated primary signal             : Flipflops/latches controlled
+     -------------------                ----------------------------
+
+  3. Internally generated signals used as flip-flop
+     clocks and latch enables         :
+                                            Number Of single-bit
+     Internal signal                  : Flipflops/latches controlled
+     -------------                      ----------------------------
+
+  4. Primary inputs used as async
+     set/reset
+                                      : **NONE**
+
+  5. Number of single-bit flip-flops in hierarchy : 0
+    -- (i)  Number of single-bit D flip-flops in hierarchy : 0
+    -- (ii) Number of single-bit JK flip-flops in hierarchy : 0
+
+  6. Number of single-bit latches   in hierarchy : 0

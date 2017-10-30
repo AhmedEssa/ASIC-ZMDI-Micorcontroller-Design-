@@ -1,0 +1,66 @@
+hal: 06.11-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+Incisive Enterprise Simulator
+hal: Options:   -logfile hal.log -smartorder -relax -v93 -ncverilogargs +incdir+/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/global_src/verilog -rulefile /cad/icpro_1.0.3/templates/hal/ius6/prz_rules.def -top address_generation_unit /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v.
+hal: Workspace: /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/hdlcheck/hal.
+hal: Date: Fri May 12 23:13:24 MEST 2017.
+
+hal: Running on design source files.....
+hal: Snapshot:  worklib.address_generation_unit:v.
+
+  ==========================================================================
+Compiling design 
+
+	Top level design units:
+		address_generation_unit
+
+  ==========================================================================
+Performing lint checks 
+
+halcheck: 06.11-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+visadev: 06.11-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+halcheck: Total errors   = 0.
+halcheck: Total warnings = 0.
+
+  ==========================================================================
+Performing synthesizability checks 
+
+cfe: 06.11.002-s(06.11.s002): (c) Copyright 1995 - 2007 Cadence Design Systems, Inc.
+cfe Build : Thu Jun 21 23:56:29 IST 2007 ldvserv108
+halsynth: Loading design snapshot....
+halsynth: Traversing design hierarchy....
+halsynth: Total errors   = 0.
+halsynth: Total warnings = 0.
+
+  ==========================================================================
+Performing structural checks 
+
+halstruct: 06.11-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+visadev: 06.11-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.
+	assign r_addr_a = (l_r_addr_a[3]) ? {sr_value,l_r_addr_a[2:0]} : {4'h0,l_r_addr_a[2:0]} ;
+|
+halstruct: *W,FDTHRU (/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v,37|0): Feedthrough detected from input 'l_r_addr_a[2:0]' to output 'r_addr_a[2:0]'.
+	assign r_addr_a = (l_r_addr_a[3]) ? {sr_value,l_r_addr_a[2:0]} : {4'h0,l_r_addr_a[2:0]} ;
+|
+halstruct: *W,TPOUNR (/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v,37|0): Output 'r_addr_a[6:3]' of top-level module is not a register.
+	assign r_addr_b = (l_r_addr_b[3]) ? {sr_value,l_r_addr_b[2:0]} : {4'h0,l_r_addr_b[2:0]} ;
+|
+halstruct: *W,FDTHRU (/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v,38|0): Feedthrough detected from input 'l_r_addr_b[2:0]' to output 'r_addr_b[2:0]'.
+	assign r_addr_b = (l_r_addr_b[3]) ? {sr_value,l_r_addr_b[2:0]} : {4'h0,l_r_addr_b[2:0]} ;
+|
+halstruct: *W,TPOUNR (/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v,38|0): Output 'r_addr_b[6:3]' of top-level module is not a register.
+	assign w_addr   = (l_w_addr[3]) ? {sr_value,l_w_addr[2:0]} : {4'h0,l_w_addr[2:0]} ;
+|
+halstruct: *W,FDTHRU (/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v,39|0): Feedthrough detected from input 'l_w_addr[2:0]' to output 'w_addr[2:0]'.
+	assign w_addr   = (l_w_addr[3]) ? {sr_value,l_w_addr[2:0]} : {4'h0,l_w_addr[2:0]} ;
+|
+halstruct: *W,TPOUNR (/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v,39|0): Output 'w_addr[6:3]' of top-level module is not a register.
+module address_generation_unit (
+|
+halstruct: *N,NUMDFF (/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v,15|0): Number of single-bit D flip-flops present in the hierarchy is 0.
+halstruct: Design facts generated in 'hal.design_facts'.
+halstruct: Total errors   = 0.
+halstruct: Total warnings = 6.
+
+  ==========================================================================
+Analysis complete.
+

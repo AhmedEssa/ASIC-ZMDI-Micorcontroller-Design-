@@ -1,0 +1,3 @@
+ncelab: 14.10-s004: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+ncelab: *W,C58DEF: The -cov58 option is no longer required and will be ignored because the new use model is the only supported use model.
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.

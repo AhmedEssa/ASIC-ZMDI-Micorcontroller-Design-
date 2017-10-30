@@ -1,0 +1,43 @@
+########################################################################
+# Makefile.hal for Cadence HAL (HDL checker) generated with ichal.
+#
+# Company           :   tud
+# Author            :   ahes15
+# E-Mail            :   insert mail address
+#
+# File Created      :   Sat May 13 02:20:00 2017
+# Last Change       :   See file date or version control.
+#
+# Project Name      :   prz
+# Sub-Project Name  :   main
+#
+
+TOPLEVEL := address_generation_unit
+
+help:
+	@echo "Targets:"
+	@echo "  runGUI"
+	@echo "  runBatch"
+
+VHDL_SOURCES = 
+VERILOG_SOURCES = \
+	 $(ICPRO_DIR)/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v 
+
+### Run the actual checker.
+hal.log: $(VHDL_SOURCES) $(VERILOG_SOURCES)
+	hal -logfile hal.log \
+	  -smartorder -relax -v93 \
+	  -ncverilogargs "+incdir+$(ICPRO_DIR)/global_src/verilog" \
+	  -rulefile /cad/icpro_1.0.3/templates/hal/ius6/prz_rules.def \
+	  -top $(TOPLEVEL) \
+	  $(VHDL_SOURCES) $(VERILOG_SOURCES)
+
+### Generate HAL logfile and start logfile browser.
+runGUI: hal.log
+	ncbrowse -sortby severity -sortby category -sortby tag hal.log
+
+### Just generate HAL logfile.
+runBatch: init hal.log
+
+init clean:
+	rm -Rf INCA_libs hal.log logfiles/* hal.design_facts

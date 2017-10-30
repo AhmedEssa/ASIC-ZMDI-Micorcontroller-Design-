@@ -1,0 +1,124 @@
+########################################################################
+# Makefile.ncsim generated with 'icncsim makefile'
+#
+# Company           :   tud
+# Author            :   ahes15
+# E-Mail            :   insert mail address
+#
+# Date              :   Wed Jun 14 19:46:21 2017
+# Last Change       :   Wed Jun 14 19:46:21 2017
+#
+# Project Name      :   prz
+# Sub-Project Name  :   tutorial_newserver
+#
+
+TOPLEVEL := tb_address_generation_unit
+
+#
+# Initialize additional source variables
+# These variables could be set in Makefile.var
+ADDITIONAL_VERILOG_SOURCES            =
+ADDITIONAL_VHDL_SOURCES               =
+ADDITIONAL_VERILOG_SEARCH_PATHS       =
+ADDITIONAL_SYSTEMVERILOG_SOURCES      =
+ADDITIONAL_SYSTEMVERILOG_SEARCH_PATHS =
+ADDITIONAL_SYSTEMC_SOURCES            =
+ADDITIONAL_SYSTEMC_SEARCH_PATHS       =
+NCVLOG_SV_OPTIONS                     = -sv
+
+#
+# Include testcase specific variables
+include Makefile.var
+
+# Include regression specific variables, if Makefile.var.reg exists
+#
+-include Makefile.var.reg
+
+
+########################################################################
+# delete worklib content
+########################################################################
+clean_worklib: 
+	\rm -rf ./worklib/*;
+
+########################################################################
+# delete logfiles content
+########################################################################
+clean_log: 
+	\rm -rf ./logfiles/*;
+
+########################################################################
+# delete cov_work content
+########################################################################
+clean_cov: 
+	\rm -rf ./cov_work/*;
+
+########################################################################
+# delete logfiles and cov_work content
+########################################################################
+clean_logcov: clean_log clean_cov
+
+########################################################################
+# Verilog sources and search paths
+########################################################################
+VERILOG_SOURCES := \
+	 $(ADDITIONAL_VERILOG_SOURCES) \
+	 ${ICPRO_DIR}/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v \
+	 ${ICPRO_DIR}/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v 
+
+VERILOG_SEARCH_PATHS := \
+	 $(ADDITIONAL_VERILOG_SEARCH_PATHS) 
+
+########################################################################
+# compile verilog sources
+########################################################################
+ncvlog_run: 
+	ncvlog -logfile ./logfiles/ncvlog.log $(NCVLOG_OPTIONS)  $(VERILOG_SEARCH_PATHS) $(VERILOG_SOURCES);
+
+########################################################################
+# compile design sources
+########################################################################
+compile_design: clean_worklib clean_cov \
+		ncvlog_run
+
+########################################################################
+# Elaborate Toplevel tb_address_generation_unit
+########################################################################
+ncelab_run: compile_design
+	ncelab -logfile ./logfiles/ncelab.log $(NCELAB_OPTIONS) $(TOPLEVEL);
+
+runGUI: ncelab_run
+	ncsim -gui -input ./scripts/runGUI.tcl -logfile ./logfiles/ncsim.log $(NCSIM_OPTIONS) $(TOPLEVEL);
+
+runBatch: ncelab_run
+	ncsim -input ./scripts/runBatch.tcl -logfile ./logfiles/ncsim.log $(NCSIM_OPTIONS) $(TOPLEVEL);
+
+########################################################################
+# coverage analysis
+########################################################################
+coverage: 
+	iccr -gui -work ./cov_work -logfile ./logfiles/iccr.log $(NCCOV_OPTIONS) ./scripts/address_generation_unit.coverage.cf;
+coverageBatch: 
+	iccr -work ./cov_work -logfile ./logfiles/iccr.log $(NCCOV_OPTIONS) ./scripts/address_generation_unit.coverage.cf;
+########################################################################
+# xterm debug environment
+########################################################################
+xterm: 
+	xterm -T "icncsim debug environment";
+
+########################################################################
+# FAST START UP Targets (_tbonly), only tb sources are compiled
+########################################################################
+
+TB_VERILOG_SOURCES := \
+	 ${ICPRO_DIR}/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v 
+
+ncvlog_run_tbonly: 
+	ncvlog -logfile ./logfiles/ncvlog.log $(NCVLOG_OPTIONS)  $(VERILOG_SEARCH_PATHS) $(TB_VERILOG_SOURCES);
+
+compile_design_tbonly: ncvlog_run_tbonly
+
+runGUI_tbonly: compile_design_tbonly
+
+runBatch_tbonly: compile_design_tbonly
+

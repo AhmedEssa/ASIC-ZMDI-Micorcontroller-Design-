@@ -1,0 +1,46 @@
+########################################################################
+# Makefile.vars template generated with 'icncsim prepare'
+#
+# Company           :   tud
+# Author            :   ahes15
+# E-Mail            :   <YOUR INPUT>
+#
+# Date              :   Sun Mar 19 16:08:21 2017
+# Last Change       :   Sun Mar 19 16:08:21 2017
+#
+# Project Name      :   prz
+# Sub-Project Name  :   main
+#
+# Setup for IUS ver :   greater or equal 5.8
+#
+
+# please make design/testcase specific modifications of ncvlog/ncvhdl/ncelab/ncsim options
+
+NCVLOG_OPTIONS    = -use5x -errormax 1 -nowarn RECOMP
+
+NCVLOG_SV_OPTIONS = -use5x -errormax 1 -sv
+
+NCVHDL_OPTIONS    = -v93 -smartorder
+
+NCELAB_OPTIONS    = -access +rwc -timescale 1ns/10ps -cov58 -coverage all -nowarn CUSRCH
+
+NCSIM_OPTIONS     = -covoverwrite -licqueue
+
+NCSDFC_OPTIONS    =
+
+NCCOV_OPTIONS     = -cov58
+
+NCSC_OPTIONS      = -ACCESS +RWC -dynamic -stop link -gnu -gui
+
+# Add additional sources, not found by 'icncsim makefile' target
+# Pleace use only relative paths or $ICPRO_DIR env variable
+ADDITIONAL_VERILOG_SOURCES            =
+ADDITIONAL_VHDL_SOURCES               =
+ADDITIONAL_VERILOG_SEARCH_PATHS       =
+ADDITIONAL_SYSTEMVERILOG_SOURCES      =
+ADDITIONAL_SYSTEMVERILOG_SEARCH_PATHS =
+
+
+
+
+

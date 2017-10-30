@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../../../../../env/xml/xsl/report_messages.xsl"?>
+<icpro_tools F="0" W="2" N="0" msgcount="2" E="0" denied="0" U="0">
+  <tools>
+    <tool name="ius">
+      <subtool name="ncelab">
+        <messagetype description="WARNING messages" name="W" msgcount="2" denied="0">
+          <messages denied="0" msgcount="1" name="C58DEF">
+            <message index="0" select="0" txt="The -cov58 option is no longer required and will be ignored because the new use model is the only supported use model."/>
+          </messages>
+          <messages denied="0" msgcount="1" name="COVDCL">
+            <message index="1" select="0" txt="By default expression coverage is scored only for Verilog logical operators (|| and &amp;&amp;) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the set_expr_coverable_operators and set_expr_coverable_statements coverage configuration file commands with suitable options at elaboration."/>
+          </messages>
+        </messagetype>
+      </subtool>
+    </tool>
+  </tools>
+  <messages>
+    <message file="" filecol="0" filerow="0" id="C58DEF" index="0" msgtype="W" result="" select="0" sn="0" tool="ius" toolsub="ncelab" txt="The -cov58 option is no longer required and will be ignored because the new use model is the only supported use model."/>
+    <message file="" filecol="0" filerow="0" id="COVDCL" index="1" msgtype="W" result="" select="0" sn="0" tool="ius" toolsub="ncelab" txt="By default expression coverage is scored only for Verilog logical operators (|| and &amp;&amp;) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the set_expr_coverable_operators and set_expr_coverable_statements coverage configuration file commands with suitable options at elaboration."/>
+  </messages>
+  <logfiles>
+    <logfile file="ncelab.log" path="."/>
+    <logfile file="ncvlog.log" path="."/>
+    <logfile file="ncsim.log" path="."/>
+    <logfile file="parse_verilog.log" path="."/>
+    <logfile file="ncvlog_sv.log" path="."/>
+    <logfile file="iccr.log" path="."/>
+    <logfile file="coverage.log" path="."/>
+    <logfile file="runGUI.log" path="."/>
+  </logfiles>
+</icpro_tools>

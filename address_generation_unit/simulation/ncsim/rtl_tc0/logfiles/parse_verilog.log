@@ -1,0 +1,92 @@
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v
+ERROR   (parse_verilog) Parsing line 45, column 9
+        file: '/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v' 
+        recognized Token; ';' 
+        expecting: '[' <range> <range_or_empty> '(' 
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v
+
+=======================================================================
+
+NOTE    (parse_verilog) processing /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v

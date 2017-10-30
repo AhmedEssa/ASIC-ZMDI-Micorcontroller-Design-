@@ -1,0 +1,17 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+./INCA_libs/irun.sun4v.06.11.nc
+-RUNMODE
+-NOSTDOUT
+-INCDIR
+/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/global_src/verilog
+/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v
+-CDSLIB
+/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/hdlcheck/hal/INCA_libs/irun.sun4v.06.11.nc/cdsrun.lib
+-HDLVAR
+/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/hdlcheck/hal/INCA_libs/irun.sun4v.06.11.nc/hdlrun.var
+-UPDATE
+-ALLOWUNBOUND

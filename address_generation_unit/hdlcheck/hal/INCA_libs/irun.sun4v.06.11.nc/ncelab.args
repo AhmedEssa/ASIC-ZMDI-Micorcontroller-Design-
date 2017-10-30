@@ -1,0 +1,22 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-NOSTDOUT
+-ACCESS
++rwc
+-partialdesign
+-RELAX
+-V93
+address_generation_unit
++incdir+/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/global_src/verilog
+-XLMODE
+./INCA_libs/irun.sun4v.06.11.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.sun4v.06.11.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.sun4v.06.11.nc/hdl.var
+-work
+worklib
+-HASXLMODE

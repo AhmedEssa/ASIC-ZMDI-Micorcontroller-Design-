@@ -1,0 +1,20 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-c
+-q
+-nostdout
+-access
++rwc
+-ncelabargs
+-partialdesign
+-log
+./.hal-irun.log
+-relax
+-smartorder
+-v93
+-top
+address_generation_unit
++incdir+/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/global_src/verilog
+/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v

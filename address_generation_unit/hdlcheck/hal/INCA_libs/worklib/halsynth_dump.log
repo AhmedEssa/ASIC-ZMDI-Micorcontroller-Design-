@@ -1,0 +1,6 @@
+General information about this run 
+-- piranha worklib.address_generation_unit:v
+-- TOOL:	cfe	06.11.002-s(06.11.s002)
+-- cfe Build : Thu Jun 21 23:56:29 IST 2007 ldvserv108
+-- Options : -DUMP +TOOLNAME halsynth -HAL ALL +DISABLE -MULTI_DRIVEN_REG TRI -NOLOG +FSM_RULE_CHECKS -SYNTHESIS ALL -IGNORE_COMB_INIT -VITAL_BLACKBOX +MDARRAY_ON -BB_SIG_SIZE 16384 -DEFINES /cad/icpro_1.0.3/templates/hal/ius6/prz_rules.def +RULES_LIST +HAL_SIDEFILE hal.log -PRAGMA ALL -cdslib ./INCA_libs/irun.nc/cds.lib -hdlvar ./INCA_libs/irun.nc/hdl.var worklib.address_generation_unit:v
+-- SMV File is :/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/hdlcheck/hal/INCA_libs/irun.nc/../worklib/address_generation_unit/v/address_generation_unit.smv

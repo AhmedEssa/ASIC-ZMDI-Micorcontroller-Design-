@@ -1,0 +1,5 @@
+COMPILED_SDF_FILE = "address_generation_unit.sdf.compiled",
+
+SCOPE = tb_address_generation_unit:address_generation_unit_i,
+
+LOG_FILE = "logfiles/sdf.log";

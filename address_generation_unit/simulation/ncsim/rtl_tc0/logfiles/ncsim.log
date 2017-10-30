@@ -1,0 +1,32 @@
+ncsim: 14.10-s004: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+SVSEED default: 1
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> source ./sim.tcl
+  Summary report deferred until the end of simulation.
+ncsim> source ./restore.tcl
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create tb_address_generation_unit -depth all -ports -database waves -waveform
+ncsim: *W,PRWFD: Only the signals/variables having immediate scope 'tb_address_generation_unit' will be added to the waveform viewer.
+Created probe 1
+ncsim> probe -create -shm tb_address_generation_unit.l_r_addr_a tb_address_generation_unit.l_r_addr_b tb_address_generation_unit.l_w_addr tb_address_generation_unit.r_addr_a tb_address_generation_unit.r_addr_b tb_address_generation_unit.sr_value tb_address_generation_unit.w_addr
+Created probe 2
+ncsim> run
+Simulation complete via $finish(1) at time 2301 NS + 0
+./testcase.v:35 $finish();
+ncsim> ^C
+ncsim> exit
+  No assertions found.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_address_generation_unit.address_generation_unit_i(address_generation_unit)
+  scope    :  scope
+  testname :  address_generation_unit.block
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_026406a0_00000000.ucm
+  data               :  ./cov_work/scope/address_generation_unit.block/icc_026406a0_00000000.ucd

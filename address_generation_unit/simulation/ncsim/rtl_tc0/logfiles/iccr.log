@@ -1,0 +1,40 @@
+              Log File for ICCR 
+              Version      : 06.11-s001
+              Release Date : Jun 4 2007
+
+
+
+############################################################################
+iccr> load_test *
+Exploring 1 test directory.
+Loading test ./cov_work/design/address_generation_unit.block
+1 Code coverage database loaded
+0 FSM coverage databases loaded
+0 Functional coverage databases loaded
+
+############################################################################
+iccr> list_instances       > ./cov_work/coverage_inst.lst
+
+############################################################################
+iccr> list_modules         > ./cov_work/coverage_mods.lst
+
+############################################################################
+iccr> 
+
+############################################################################
+iccr> report_html *                    > ./cov_work/coverage_report.html
+
+############################################################################
+iccr> report_tabular_summary -module * > ./cov_work/coverage_report.tab
+
+############################################################################
+iccr> 
+
+############################################################################
+iccr> #list_fsms -instance > ./cov_work/coverage_fsms.lst
+
+############################################################################
+iccr> 
+
+Exiting, current time/date:  Mon May  1 00:59:53 2017
+

@@ -1,0 +1,10 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-ACCESS
++rwc
+
+-partialdesign
+
+address_generation_unit

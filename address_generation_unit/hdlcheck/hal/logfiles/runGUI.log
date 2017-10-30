@@ -1,0 +1,2 @@
+ncbrowse -sortby severity -sortby category -sortby tag hal.log
+ncbrowse: 06.11-s002: (c) Copyright 1995-2007 Cadence Design Systems, Inc.

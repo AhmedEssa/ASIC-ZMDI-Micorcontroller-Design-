@@ -1,0 +1,20 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-NOSTDOUT
++incdir+/home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/global_src/verilog
+-XLSTIME
+1494623626
+-XLKEEP
+-XLMODE
+./INCA_libs/irun.sun4v.06.11.nc
+-RUNMODE
+-CDSLIB
+./INCA_libs/irun.sun4v.06.11.nc/cds.lib
+-HDLVAR
+./INCA_libs/irun.sun4v.06.11.nc/hdl.var
+-XLNAME
+irun
+-XLVERSION
+"TOOL:	irun	06.11-s002"

@@ -1,0 +1,20 @@
+\rm -rf ./worklib/*;
+\rm -rf ./cov_work/*;
+ncvlog -logfile ./logfiles/ncvlog.log -use5x -errormax 1 -nowarn RECOMP     /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/rtl/verilog/address_generation_unit.v /home2/vlsi00/prz-root/icpro_teamspace/lpd15/zmc/gruppe01/workspaces/ahes15/units/address_generation_unit/source/tb/verilog/tb_address_generation_unit.v ;
+ncvlog: 14.10-s004: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+ncelab -logfile ./logfiles/ncelab.log -access +rwc -timescale 1ns/10ps -cov58 -coverage all -nowarn CUSRCH tb_address_generation_unit;
+ncelab: 14.10-s004: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+ncelab: *W,C58DEF: The -cov58 option is no longer required and will be ignored because the new use model is the only supported use model.
+ncelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+ncsim -gui -input ./scripts/runGUI.tcl -logfile ./logfiles/ncsim.log -covoverwrite -licqueue tb_address_generation_unit;
+ncsim: 14.10-s004: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
+SVSEED default: 1
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> source ./sim.tcl
+  Summary report deferred until the end of simulation.
+ncsim> source ./restore.tcl
+ncsim> 
+ncsim> txe: 14.10-s004: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+simvision: 14.10-s004: (c) Copyright 1995-2014 Cadence Design Systems, Inc.
